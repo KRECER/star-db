@@ -1,0 +1,21 @@
+.error-indicator {
+  color: #C0842D;
+  text-align: center;
+
+  &__icon {
+    width: 75px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+
+  &__descr {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+}
