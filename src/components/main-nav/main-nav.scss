@@ -1,0 +1,33 @@
+$color-link: #348273;
+$bg-link-hover: #2A2A2A;
+
+.main-nav {
+
+  &__list {
+    display: flex;
+  }
+
+  &__link {
+    padding: 25px;
+    color: $color-link;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $bg-link-hover;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .main-nav {
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__link {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

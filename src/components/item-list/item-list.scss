@@ -1,0 +1,18 @@
+.item-list {
+  border-radius: 8px;
+  background-color: #2A2A2A;
+
+  &__item {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    cursor: pointer;
+
+    &:first-child {
+      border: 0;
+    }
+
+    &:hover {
+      background-color: darken(#2A2A2A, 2%);
+    }
+  }
+}

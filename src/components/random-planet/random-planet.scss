@@ -1,0 +1,63 @@
+.random-planet {
+  margin-bottom: 50px;
+
+  &__inner {
+    display: flex;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: #2A2A2A;
+  }
+
+  &__image-wrap {
+    flex-shrink: 0;
+    margin-right: 40px;
+  }
+
+  &__image {
+    border-radius: 1rem;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+
+  &__item {
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  &__item-name {
+    margin-right: 20px;
+  }
+
+  &__item-value {
+
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .random-planet {
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__image-wrap {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}

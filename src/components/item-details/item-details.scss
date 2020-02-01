@@ -1,0 +1,43 @@
+.item-details {
+  display: flex;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #2A2A2A;
+
+  &__image-wrap {
+    margin-right: 30px;
+  }
+
+  &__image {
+    border-radius: 1rem;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+@media (max-width: 420px) {
+  .item-details {
+    flex-direction: column;
+
+    &__image-wrap {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+
+    &__image {
+      width: 100%;
+    }
+  }
+}
