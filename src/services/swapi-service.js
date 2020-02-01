@@ -29,6 +29,15 @@ class SwapiService {
   async fetchPlanet(id) {
     return await this.http(`/planets/${id}/`);
   }
+
+  async fetchAllStarships() {
+    const res = await this.http('/starships/');
+    return res.results;
+  }
+
+  async fetchStarship(id) {
+    return await this.http(`/starships/${id}/`);
+  }
 }
 
 export default SwapiService;
