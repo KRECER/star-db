@@ -23,7 +23,7 @@ class RandomPlanet extends Component {
   };
 
   updatePlanet() {
-    this.swapiService.fetchPlanet(1200323)
+    this.swapiService.fetchPlanet(2)
       .then(this.planetLoadedHandler)
       .catch(this.errorHandler);
   }
