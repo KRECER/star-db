@@ -13,12 +13,21 @@ class SwapiService {
   }
 
   async fetchAllPeople() {
-    const res = await this.http('/people');
+    const res = await this.http('/people/');
     return res.results;
   }
 
   async fetchPerson(id) {
-    return await this.http(`/people/${id}`);
+    return await this.http(`/people/${id}/`);
+  }
+
+  async fetchAllPlanets() {
+    const res = await this.http('/planets/');
+    return res.results;
+  }
+
+  async fetchPlanet(id) {
+    return await this.http(`/planets/${id}/`);
   }
 }
 
